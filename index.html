@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <div class="form-group">
+            <label for="length">Comprimento da Senha:</label>
+            <input type="number" id="length" value="8" min="4" max="30">
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="includeUppercase"> Incluir Maiúsculas</label>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="includeNumbers"> Incluir Números</label>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="includeSymbols"> Incluir Símbolos</label>
+        </div>
+        <button onclick="generatePassword()">Gerar Senha</button>
+        <div class="password-display" id="passwordDisplay">Sua senha aparecerá aqui</div>
+        <span class="developer">Developed: Andre Azevedo</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
